@@ -2,8 +2,8 @@
 require File.expand_path('../lib/corset/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Maximilian Schoening"]
-  gem.email         = ["mschoening@me.com"]
+  gem.authors       = ["Maximilian Schoening, Eric Holmes"]
+  gem.email         = ["mschoening@me.com, eric@ejholmes.net"]
   gem.description   = %q{A ruby gem to set the right CORS configuration for an S3 bucket.}
   gem.summary       = %q{A ruby gem to set the right CORS configuration for an S3 bucket.}
   gem.homepage      = "https://github.com/max/corset"
