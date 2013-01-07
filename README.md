@@ -1,8 +1,14 @@
-Corset
-======
+## Corset
 
-A simple script to set the right CORS configuration for an S3 bucket. This
-should really be a Gem.
+A simple ruby gem to set the right CORS configuration for an S3 bucket.
+
+## Installation
+
+```bash
+$ gem install corset
+```
+
+## Usage
 
 Create a `.env` file with:
 
@@ -15,8 +21,8 @@ Note that you can't use `*` as the allowed origin if you plan on distributing
 the bucket via Cloudfront. Currently Cloudfront caches the origin of the first
 request.
 
-Then  run:
+Then run:
 
 ```bash
-$ export $(cat .env) && bundle exec ruby corset.rb
+$ export $(cat .env) && corset set
 ```
